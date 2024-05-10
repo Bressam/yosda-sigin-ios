@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		189A4A3A2BEDACC8005EAB92 /* YOSDA_SignInApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189A4A392BEDACC8005EAB92 /* YOSDA_SignInApp.swift */; };
-		189A4A3C2BEDACC8005EAB92 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189A4A3B2BEDACC8005EAB92 /* ContentView.swift */; };
-		189A4A3E2BEDACC9005EAB92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 189A4A3D2BEDACC9005EAB92 /* Assets.xcassets */; };
-		189A4A412BEDACC9005EAB92 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 189A4A402BEDACC9005EAB92 /* Preview Assets.xcassets */; };
+		18CB57E82BEDD2E100C489EE /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CB57DA2BEDD2E100C489EE /* BottomSheetView.swift */; };
+		18CB57E92BEDD2E100C489EE /* GradientHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CB57DB2BEDD2E100C489EE /* GradientHeaderView.swift */; };
+		18CB57EA2BEDD2E100C489EE /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CB57DC2BEDD2E100C489EE /* PrimaryButton.swift */; };
+		18CB57EB2BEDD2E100C489EE /* PrimaryTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CB57DD2BEDD2E100C489EE /* PrimaryTextField.swift */; };
+		18CB57EC2BEDD2E100C489EE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18CB57DF2BEDD2E100C489EE /* Preview Assets.xcassets */; };
+		18CB57ED2BEDD2E100C489EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CB57E12BEDD2E100C489EE /* ContentView.swift */; };
+		18CB57EE2BEDD2E100C489EE /* LayoutConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CB57E32BEDD2E100C489EE /* LayoutConstants.swift */; };
+		18CB57EF2BEDD2E100C489EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18CB57E52BEDD2E100C489EE /* Assets.xcassets */; };
+		18CB57F02BEDD2E100C489EE /* YOSDA_SignUpApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CB57E62BEDD2E100C489EE /* YOSDA_SignUpApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		189A4A362BEDACC8005EAB92 /* YOSDA-SignIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YOSDA-SignIn.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		189A4A392BEDACC8005EAB92 /* YOSDA_SignInApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YOSDA_SignInApp.swift; sourceTree = "<group>"; };
-		189A4A3B2BEDACC8005EAB92 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		189A4A3D2BEDACC9005EAB92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		189A4A402BEDACC9005EAB92 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		189A4A362BEDACC8005EAB92 /* YOSDA-SignUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YOSDA-SignUp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18CB57DA2BEDD2E100C489EE /* BottomSheetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
+		18CB57DB2BEDD2E100C489EE /* GradientHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientHeaderView.swift; sourceTree = "<group>"; };
+		18CB57DC2BEDD2E100C489EE /* PrimaryButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		18CB57DD2BEDD2E100C489EE /* PrimaryTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimaryTextField.swift; sourceTree = "<group>"; };
+		18CB57DF2BEDD2E100C489EE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		18CB57E12BEDD2E100C489EE /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		18CB57E32BEDD2E100C489EE /* LayoutConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConstants.swift; sourceTree = "<group>"; };
+		18CB57E52BEDD2E100C489EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18CB57E62BEDD2E100C489EE /* YOSDA_SignUpApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YOSDA_SignUpApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +45,7 @@
 		189A4A2D2BEDACC8005EAB92 = {
 			isa = PBXGroup;
 			children = (
-				189A4A382BEDACC8005EAB92 /* YOSDA-SignIn */,
+				18CB57E72BEDD2E100C489EE /* YOSDA-SignUp */,
 				189A4A372BEDACC8005EAB92 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,36 +53,65 @@
 		189A4A372BEDACC8005EAB92 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				189A4A362BEDACC8005EAB92 /* YOSDA-SignIn.app */,
+				189A4A362BEDACC8005EAB92 /* YOSDA-SignUp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		189A4A382BEDACC8005EAB92 /* YOSDA-SignIn */ = {
+		18CB57DE2BEDD2E100C489EE /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				189A4A392BEDACC8005EAB92 /* YOSDA_SignInApp.swift */,
-				189A4A3B2BEDACC8005EAB92 /* ContentView.swift */,
-				189A4A3D2BEDACC9005EAB92 /* Assets.xcassets */,
-				189A4A3F2BEDACC9005EAB92 /* Preview Content */,
+				18CB57DA2BEDD2E100C489EE /* BottomSheetView.swift */,
+				18CB57DB2BEDD2E100C489EE /* GradientHeaderView.swift */,
+				18CB57DC2BEDD2E100C489EE /* PrimaryButton.swift */,
+				18CB57DD2BEDD2E100C489EE /* PrimaryTextField.swift */,
 			);
-			path = "YOSDA-SignIn";
+			path = Components;
 			sourceTree = "<group>";
 		};
-		189A4A3F2BEDACC9005EAB92 /* Preview Content */ = {
+		18CB57E02BEDD2E100C489EE /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				189A4A402BEDACC9005EAB92 /* Preview Assets.xcassets */,
+				18CB57DF2BEDD2E100C489EE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		18CB57E22BEDD2E100C489EE /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				18CB57E12BEDD2E100C489EE /* ContentView.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		18CB57E42BEDD2E100C489EE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				18CB57E32BEDD2E100C489EE /* LayoutConstants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		18CB57E72BEDD2E100C489EE /* YOSDA-SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				18CB57DE2BEDD2E100C489EE /* Components */,
+				18CB57E02BEDD2E100C489EE /* Preview Content */,
+				18CB57E22BEDD2E100C489EE /* Scenes */,
+				18CB57E42BEDD2E100C489EE /* Utils */,
+				18CB57E52BEDD2E100C489EE /* Assets.xcassets */,
+				18CB57E62BEDD2E100C489EE /* YOSDA_SignUpApp.swift */,
+			);
+			path = "YOSDA-SignUp";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		189A4A352BEDACC8005EAB92 /* YOSDA-SignIn */ = {
+		189A4A352BEDACC8005EAB92 /* YOSDA-SignUp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 189A4A442BEDACC9005EAB92 /* Build configuration list for PBXNativeTarget "YOSDA-SignIn" */;
+			buildConfigurationList = 189A4A442BEDACC9005EAB92 /* Build configuration list for PBXNativeTarget "YOSDA-SignUp" */;
 			buildPhases = (
 				189A4A322BEDACC8005EAB92 /* Sources */,
 				189A4A332BEDACC8005EAB92 /* Frameworks */,
@@ -82,9 +121,9 @@
 			);
 			dependencies = (
 			);
-			name = "YOSDA-SignIn";
+			name = "YOSDA-SignUp";
 			productName = "YOSDA-SignIn";
-			productReference = 189A4A362BEDACC8005EAB92 /* YOSDA-SignIn.app */;
+			productReference = 189A4A362BEDACC8005EAB92 /* YOSDA-SignUp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +141,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 189A4A312BEDACC8005EAB92 /* Build configuration list for PBXProject "YOSDA-SignIn" */;
+			buildConfigurationList = 189A4A312BEDACC8005EAB92 /* Build configuration list for PBXProject "YOSDA-SignUp" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +154,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				189A4A352BEDACC8005EAB92 /* YOSDA-SignIn */,
+				189A4A352BEDACC8005EAB92 /* YOSDA-SignUp */,
 			);
 		};
 /* End PBXProject section */
@@ -125,8 +164,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				189A4A412BEDACC9005EAB92 /* Preview Assets.xcassets in Resources */,
-				189A4A3E2BEDACC9005EAB92 /* Assets.xcassets in Resources */,
+				18CB57EF2BEDD2E100C489EE /* Assets.xcassets in Resources */,
+				18CB57EC2BEDD2E100C489EE /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +176,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				189A4A3C2BEDACC8005EAB92 /* ContentView.swift in Sources */,
-				189A4A3A2BEDACC8005EAB92 /* YOSDA_SignInApp.swift in Sources */,
+				18CB57EA2BEDD2E100C489EE /* PrimaryButton.swift in Sources */,
+				18CB57ED2BEDD2E100C489EE /* ContentView.swift in Sources */,
+				18CB57E82BEDD2E100C489EE /* BottomSheetView.swift in Sources */,
+				18CB57EE2BEDD2E100C489EE /* LayoutConstants.swift in Sources */,
+				18CB57EB2BEDD2E100C489EE /* PrimaryTextField.swift in Sources */,
+				18CB57E92BEDD2E100C489EE /* GradientHeaderView.swift in Sources */,
+				18CB57F02BEDD2E100C489EE /* YOSDA_SignUpApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +315,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"YOSDA-SignIn/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"YOSDA-SignUp/Preview Content\"";
 				DEVELOPMENT_TEAM = T9ZJWJGCBB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -300,7 +344,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"YOSDA-SignIn/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"YOSDA-SignUp/Preview Content\"";
 				DEVELOPMENT_TEAM = T9ZJWJGCBB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -325,7 +369,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		189A4A312BEDACC8005EAB92 /* Build configuration list for PBXProject "YOSDA-SignIn" */ = {
+		189A4A312BEDACC8005EAB92 /* Build configuration list for PBXProject "YOSDA-SignUp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				189A4A422BEDACC9005EAB92 /* Debug */,
@@ -334,7 +378,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		189A4A442BEDACC9005EAB92 /* Build configuration list for PBXNativeTarget "YOSDA-SignIn" */ = {
+		189A4A442BEDACC9005EAB92 /* Build configuration list for PBXNativeTarget "YOSDA-SignUp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				189A4A452BEDACC9005EAB92 /* Debug */,

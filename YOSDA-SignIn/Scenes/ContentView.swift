@@ -6,11 +6,13 @@
 //
 
 import SwiftUI
+import AuthenticationServices
 
 struct ContentView: View {
-    @State var email: String = ""
-    @State var password: String = ""
+    @State private var email: String = ""
+    @State private var password: String = ""
     @State private var showingAlert = false
+    @State private var storePassword: Bool = true
 
     var body: some View {
         ZStack {
@@ -29,6 +31,8 @@ struct ContentView: View {
                                          hasSecurityToggle: true) {
                             showingAlert = true
                         }
+                        storePasswordSwitch
+                        buttonsStack
                         Spacer()
                     }
                 }
@@ -39,6 +43,31 @@ struct ContentView: View {
                       dismissButton: .cancel())
             }
         }.ignoresSafeArea()
+    }
+    
+    private var storePasswordSwitch: some View {
+        HStack {
+            Toggle(isOn: $storePassword, label: {
+                Text("Lembrar minha senha")
+            })
+        }
+    }
+    
+    private var buttonsStack: some View {
+        VStack {
+            PrimaryButton(buttonTitle: "Criar conta",
+                          buttonAction: {})
+            .frame(height: ButtonSizeConstants.big.constant)
+            
+            SignInWithAppleButton(
+                onRequest: { request in
+                    //
+                },
+                onCompletion: { result in
+                    //
+                }
+            ).frame(height: ButtonSizeConstants.big.constant)
+        }
     }
 }
 

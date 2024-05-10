@@ -46,9 +46,8 @@ struct PrimaryTextField: View {
                 }
             }
             .overlay {
-                RoundedRectangle(cornerRadius: 6)
+                RoundedRectangle(cornerRadius: RadiusConstants.small.constant)
                     .stroke(.highlight, lineWidth: 2.5)
-                    .frame(height: 44)
             }
         }
     }

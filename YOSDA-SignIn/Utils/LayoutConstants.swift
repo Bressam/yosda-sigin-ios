@@ -20,3 +20,23 @@ enum SpacingConstants {
         }
     }
 }
+
+enum ButtonSizeConstants {
+    case big
+    
+    var constant: CGFloat {
+        switch self {
+        case .big: return 48
+        }
+    }
+}
+
+enum RadiusConstants {
+    case small
+    
+    var constant: CGFloat {
+        switch self {
+        case .small: return 8
+        }
+    }
+}

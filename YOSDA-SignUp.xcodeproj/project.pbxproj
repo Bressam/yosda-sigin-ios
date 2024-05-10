@@ -12,7 +12,7 @@
 		18CB57EA2BEDD2E100C489EE /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CB57DC2BEDD2E100C489EE /* PrimaryButton.swift */; };
 		18CB57EB2BEDD2E100C489EE /* PrimaryTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CB57DD2BEDD2E100C489EE /* PrimaryTextField.swift */; };
 		18CB57EC2BEDD2E100C489EE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18CB57DF2BEDD2E100C489EE /* Preview Assets.xcassets */; };
-		18CB57ED2BEDD2E100C489EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CB57E12BEDD2E100C489EE /* ContentView.swift */; };
+		18CB57ED2BEDD2E100C489EE /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CB57E12BEDD2E100C489EE /* SignUpView.swift */; };
 		18CB57EE2BEDD2E100C489EE /* LayoutConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CB57E32BEDD2E100C489EE /* LayoutConstants.swift */; };
 		18CB57EF2BEDD2E100C489EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18CB57E52BEDD2E100C489EE /* Assets.xcassets */; };
 		18CB57F02BEDD2E100C489EE /* YOSDA_SignUpApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CB57E62BEDD2E100C489EE /* YOSDA_SignUpApp.swift */; };
@@ -25,7 +25,7 @@
 		18CB57DC2BEDD2E100C489EE /* PrimaryButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		18CB57DD2BEDD2E100C489EE /* PrimaryTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimaryTextField.swift; sourceTree = "<group>"; };
 		18CB57DF2BEDD2E100C489EE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		18CB57E12BEDD2E100C489EE /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		18CB57E12BEDD2E100C489EE /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		18CB57E32BEDD2E100C489EE /* LayoutConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConstants.swift; sourceTree = "<group>"; };
 		18CB57E52BEDD2E100C489EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18CB57E62BEDD2E100C489EE /* YOSDA_SignUpApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YOSDA_SignUpApp.swift; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 		18CB57E22BEDD2E100C489EE /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				18CB57E12BEDD2E100C489EE /* ContentView.swift */,
+				18CB57E12BEDD2E100C489EE /* SignUpView.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -177,7 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18CB57EA2BEDD2E100C489EE /* PrimaryButton.swift in Sources */,
-				18CB57ED2BEDD2E100C489EE /* ContentView.swift in Sources */,
+				18CB57ED2BEDD2E100C489EE /* SignUpView.swift in Sources */,
 				18CB57E82BEDD2E100C489EE /* BottomSheetView.swift in Sources */,
 				18CB57EE2BEDD2E100C489EE /* LayoutConstants.swift in Sources */,
 				18CB57EB2BEDD2E100C489EE /* PrimaryTextField.swift in Sources */,

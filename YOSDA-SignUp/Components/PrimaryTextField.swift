@@ -40,8 +40,13 @@ struct PrimaryTextField: View {
                     Button(action: {
                         isSecured.toggle()
                     }, label: {
-                        Image(systemName: "eye")
-                            .foregroundStyle(.gray)
+                        if isSecured {
+                            Image(systemName: "eye")
+                                .foregroundStyle(.gray)
+                        } else {
+                            Image(systemName: "eye.slash")
+                                .foregroundStyle(.gray)
+                        }
                     }).padding(.trailing, SpacingConstants.small.constant)
                 }
             }

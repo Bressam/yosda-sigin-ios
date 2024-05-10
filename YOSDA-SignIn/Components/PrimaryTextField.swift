@@ -11,10 +11,13 @@ struct PrimaryTextField: View {
     @State var fieldTitle: String
     @State var inputText: String
     @State var buttonTitle: String? = nil
+    @State var isSecured: Bool = false
+    @State var hasSecurityToggle: Bool = false
     var buttonAction: (() -> Void)? = nil
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 12) {
+        VStack(alignment: .leading,
+               spacing: SpacingConstants.small.constant) {
             HStack {
                 Text(fieldTitle)
                     .fontWeight(.semibold)
@@ -28,12 +31,34 @@ struct PrimaryTextField: View {
                 }
             }
             
-            TextField("", text: $inputText)
-                .overlay {
-                    RoundedRectangle(cornerRadius: 6)
-                        .stroke(.highlight, lineWidth: 2)
-                        .frame(height: 38)
+            HStack {
+                inputField
+                    .padding(.leading, SpacingConstants.small.constant)
+                    .frame(height: 42)
+                Spacer()
+                if hasSecurityToggle {
+                    Button(action: {
+                        isSecured.toggle()
+                    }, label: {
+                        Image(systemName: "eye")
+                            .foregroundStyle(.gray)
+                    }).padding(.trailing, SpacingConstants.small.constant)
                 }
+            }
+            .overlay {
+                RoundedRectangle(cornerRadius: 6)
+                    .stroke(.highlight, lineWidth: 2.5)
+                    .frame(height: 44)
+            }
+        }
+    }
+    
+    @ViewBuilder
+    private var inputField: some View {
+        if isSecured {
+            SecureField("", text: $inputText)
+        } else {
+            TextField("", text: $inputText)
         }
     }
 }

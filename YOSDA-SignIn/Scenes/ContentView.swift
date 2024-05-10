@@ -24,7 +24,9 @@ struct ContentView: View {
                                          inputText: email)
                         PrimaryTextField(fieldTitle: "Senha",
                                          inputText: password,
-                                         buttonTitle: "Recuperar senha") {
+                                         buttonTitle: "Recuperar senha",
+                                         isSecured: true,
+                                         hasSecurityToggle: true) {
                             showingAlert = true
                         }
                         Spacer()

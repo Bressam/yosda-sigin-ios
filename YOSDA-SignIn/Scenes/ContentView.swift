@@ -23,7 +23,7 @@ struct ContentView: View {
             ZStack {
                 BottomSheet(title: "Crie sua conta" ) {
                     VStack(alignment: .leading,
-                           spacing: SpacingConstants.big.constant) {
+                           spacing: SpacingConstants.medium.constant) {
                         PrimaryTextField(fieldTitle: "E-mail",
                                          inputText: email)
                         PrimaryTextField(fieldTitle: "Senha",
@@ -53,7 +53,7 @@ struct ContentView: View {
             Spacer()
             Text("Já possui uma conta?")
                 .foregroundStyle(.gray)
-            Button("Entre", action: {})
+            Button("Entre", action: { showingAlert = true })
             Spacer()
         }
     }
@@ -70,12 +70,12 @@ struct ContentView: View {
     private var buttonsStack: some View {
         VStack {
             PrimaryButton(buttonTitle: "Criar conta",
-                          buttonAction: {})
+                          buttonAction: { showingAlert = true })
             .frame(height: ButtonSizeConstants.big.constant)
             
             SignInWithAppleButton(
                 onRequest: { request in
-                    //
+                    showingAlert = true
                 },
                 onCompletion: { result in
                     //

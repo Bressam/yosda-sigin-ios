@@ -48,10 +48,21 @@ struct ContentView: View {
         
     }
 
+    private var siginInTipView: some View {
+        HStack(alignment: .center) {
+            Spacer()
+            Text("Já possui uma conta?")
+                .foregroundStyle(.gray)
+            Button("Entre", action: {})
+            Spacer()
+        }
+    }
+
     private var storePasswordSwitch: some View {
         HStack {
             Toggle(isOn: $storePassword, label: {
                 Text("Lembrar minha senha")
+                    .font(.callout)
             })
         }
     }
@@ -70,6 +81,7 @@ struct ContentView: View {
                     //
                 }
             ).frame(height: ButtonSizeConstants.big.constant)
+            siginInTipView
         }
     }
 }

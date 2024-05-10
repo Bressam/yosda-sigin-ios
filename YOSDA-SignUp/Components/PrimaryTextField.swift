@@ -56,8 +56,10 @@ struct PrimaryTextField: View {
     private var inputField: some View {
         if isSecured {
             SecureField("", text: $inputText)
+                .foregroundStyle(.gray)
         } else {
             TextField("", text: $inputText)
+                .foregroundStyle(.gray)
         }
     }
 }

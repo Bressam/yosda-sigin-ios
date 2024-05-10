@@ -13,11 +13,10 @@ struct ContentView: View {
     @State private var password: String = ""
     @State private var showingAlert = false
     @State private var storePassword: Bool = true
-
+    
     var body: some View {
-        ZStack {
-            // Background image
-            Color.blue
+        VStack(spacing: -30) {
+            headerView.frame(height: 360)
             ZStack {
                 BottomSheet(title: "Crie sua conta" ) {
                     VStack(alignment: .leading,
@@ -36,13 +35,30 @@ struct ContentView: View {
                         Spacer()
                     }
                 }
-            }.padding(.top, 300)
+            }
+        }.ignoresSafeArea()
             .alert(isPresented: $showingAlert) {
                 Alert(title: Text("Oups!"),
                       message: Text("Not implemented yet :("),
                       dismissButton: .cancel())
             }
-        }.ignoresSafeArea()
+        
+    }
+    
+    private var headerView: some View {
+        ZStack {
+            Rectangle()
+                .fill(
+                    LinearGradient(gradient: Gradient(colors: [
+                        .init(red: 26 / 255, green: 4 / 255, blue: 58 / 255),
+                        .init(red: 69 / 255, green: 23 / 255, blue: 181 / 255)
+                    ]), startPoint: .top, endPoint: .bottom)
+                )
+            Image("yosda-logo")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(height: 100)
+        }
     }
     
     private var storePasswordSwitch: some View {

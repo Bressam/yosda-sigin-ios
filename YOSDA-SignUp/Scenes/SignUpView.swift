@@ -8,7 +8,7 @@
 import SwiftUI
 import AuthenticationServices
 
-struct ContentView: View {
+struct SignUpView: View {
     @State private var email: String = ""
     @State private var password: String = ""
     @State private var showingAlert = false
@@ -87,5 +87,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    SignUpView()
 }

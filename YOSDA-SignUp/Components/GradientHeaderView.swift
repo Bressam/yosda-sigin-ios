@@ -1,6 +1,6 @@
 //
 //  GradientHeaderView.swift
-//  YOSDA-SignIn
+//  YOSDA-SignUp
 //
 //  Created by Giovanne Bressam on 10/05/24.
 //

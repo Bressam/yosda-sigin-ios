@@ -1,6 +1,6 @@
 //
 //  PrimaryTextField.swift
-//  YOSDA-SignIn
+//  YOSDA-SignUp
 //
 //  Created by Giovanne Bressam on 09/05/24.
 //
@@ -64,5 +64,12 @@ struct PrimaryTextField: View {
 
 #Preview(traits: .sizeThatFitsLayout) {
     PrimaryTextField(fieldTitle: "Field title", inputText: "")
+        .padding(24)
+}
+
+#Preview(traits: .sizeThatFitsLayout) {
+    PrimaryTextField(fieldTitle: "Field title", inputText: "",
+                     isSecured: true,
+                     hasSecurityToggle: true)
         .padding(24)
 }

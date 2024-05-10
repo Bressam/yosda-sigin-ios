@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  YOSDA-SignIn
+//  YOSDA-SignUp
 //
 //  Created by Giovanne Bressam on 09/05/24.
 //

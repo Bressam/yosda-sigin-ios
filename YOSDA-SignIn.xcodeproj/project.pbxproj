@@ -11,6 +11,7 @@
 		181EA8DB2BEDBE85002D6C27 /* PrimaryTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181EA8DA2BEDBE85002D6C27 /* PrimaryTextField.swift */; };
 		181EA8DD2BEDBEAE002D6C27 /* LayoutConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181EA8DC2BEDBEAE002D6C27 /* LayoutConstants.swift */; };
 		1856FB562BEDC95900F0E11A /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856FB552BEDC95900F0E11A /* PrimaryButton.swift */; };
+		1856FB582BEDCFE100F0E11A /* GradientHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1856FB572BEDCFE100F0E11A /* GradientHeaderView.swift */; };
 		189A4A3A2BEDACC8005EAB92 /* YOSDA_SignInApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189A4A392BEDACC8005EAB92 /* YOSDA_SignInApp.swift */; };
 		189A4A3C2BEDACC8005EAB92 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189A4A3B2BEDACC8005EAB92 /* ContentView.swift */; };
 		189A4A3E2BEDACC9005EAB92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 189A4A3D2BEDACC9005EAB92 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 		181EA8DA2BEDBE85002D6C27 /* PrimaryTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryTextField.swift; sourceTree = "<group>"; };
 		181EA8DC2BEDBEAE002D6C27 /* LayoutConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutConstants.swift; sourceTree = "<group>"; };
 		1856FB552BEDC95900F0E11A /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		1856FB572BEDCFE100F0E11A /* GradientHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientHeaderView.swift; sourceTree = "<group>"; };
 		189A4A362BEDACC8005EAB92 /* YOSDA-SignIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YOSDA-SignIn.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		189A4A392BEDACC8005EAB92 /* YOSDA_SignInApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YOSDA_SignInApp.swift; sourceTree = "<group>"; };
 		189A4A3B2BEDACC8005EAB92 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 				181EA8D82BEDBE69002D6C27 /* BottomSheetView.swift */,
 				181EA8DA2BEDBE85002D6C27 /* PrimaryTextField.swift */,
 				1856FB552BEDC95900F0E11A /* PrimaryButton.swift */,
+				1856FB572BEDCFE100F0E11A /* GradientHeaderView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 				181EA8DB2BEDBE85002D6C27 /* PrimaryTextField.swift in Sources */,
 				181EA8D92BEDBE69002D6C27 /* BottomSheetView.swift in Sources */,
 				181EA8DD2BEDBEAE002D6C27 /* LayoutConstants.swift in Sources */,
+				1856FB582BEDCFE100F0E11A /* GradientHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

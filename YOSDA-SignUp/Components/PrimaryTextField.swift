@@ -13,14 +13,16 @@ struct PrimaryTextField: View {
     @State var buttonTitle: String? = nil
     @State var isSecured: Bool = false
     @State var hasSecurityToggle: Bool = false
+    @State var storePassword: Bool = true
     var buttonAction: (() -> Void)? = nil
     
     var body: some View {
         VStack(alignment: .leading,
-               spacing: SpacingConstants.small.constant) {
+               spacing: SpacingConstants.xsmall.constant) {
             HStack {
                 Text(fieldTitle)
-                    .fontWeight(.semibold)
+                    .font(.callout)
+                    .fontWeight(.bold)
                     .foregroundStyle(.gray)
                 if let buttonTitle,
                    let buttonAction {
@@ -34,7 +36,7 @@ struct PrimaryTextField: View {
             HStack {
                 inputField
                     .padding(.leading, SpacingConstants.small.constant)
-                    .frame(height: 42)
+                    .frame(height: 48)
                 Spacer()
                 if hasSecurityToggle {
                     Button(action: {
@@ -42,10 +44,10 @@ struct PrimaryTextField: View {
                     }, label: {
                         if isSecured {
                             Image(systemName: "eye")
-                                .foregroundStyle(.gray)
+                                .foregroundStyle(.gray.opacity(0.8))
                         } else {
                             Image(systemName: "eye.slash")
-                                .foregroundStyle(.gray)
+                                .foregroundStyle(.gray.opacity(0.8))
                         }
                     }).padding(.trailing, SpacingConstants.small.constant)
                 }
@@ -53,6 +55,11 @@ struct PrimaryTextField: View {
             .overlay {
                 RoundedRectangle(cornerRadius: RadiusConstants.small.constant)
                     .stroke(.highlight, lineWidth: 2.5)
+            }
+
+            if isSecured {
+                storePasswordSwitch
+                    .padding(.top, SpacingConstants.xsmall.constant)
             }
         }
     }
@@ -65,6 +72,15 @@ struct PrimaryTextField: View {
         } else {
             TextField("", text: $inputText)
                 .foregroundStyle(.gray)
+        }
+    }
+    
+    private var storePasswordSwitch: some View {
+        HStack {
+            Toggle(isOn: $storePassword, label: {
+                Text("Lembrar minha senha")
+                    .font(.caption)
+            })
         }
     }
 }

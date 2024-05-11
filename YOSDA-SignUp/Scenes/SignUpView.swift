@@ -9,8 +9,8 @@ import SwiftUI
 import AuthenticationServices
 
 struct SignUpView: View {
-    @State private var email: String = ""
-    @State private var password: String = ""
+    private var email: String = ""
+    private var password: String = ""
     @State private var showingAlert = false
     @State private var storePassword: Bool = true
     
@@ -19,21 +19,21 @@ struct SignUpView: View {
             HeaderView(colors: [
                 .init(red: 26 / 255, green: 4 / 255, blue: 58 / 255),
                 .init(red: 69 / 255, green: 23 / 255, blue: 181 / 255)
-            ]).frame(height: 360)
+            ]).frame(height: 350)
             ZStack {
                 BottomSheet(title: "Crie sua conta" ) {
                     VStack(alignment: .leading,
-                           spacing: SpacingConstants.medium.constant) {
+                           spacing: SpacingConstants.large.constant) {
                         PrimaryTextField(fieldTitle: "E-mail",
                                          inputText: email)
                         PrimaryTextField(fieldTitle: "Senha",
                                          inputText: password,
                                          buttonTitle: "Recuperar senha",
                                          isSecured: true,
-                                         hasSecurityToggle: true) {
+                                         hasSecurityToggle: true,
+                                         storePassword: storePassword) {
                             showingAlert = true
                         }
-                        storePasswordSwitch
                         buttonsStack
                         Spacer()
                     }
@@ -53,25 +53,18 @@ struct SignUpView: View {
             Spacer()
             Text("Já possui uma conta?")
                 .foregroundStyle(.gray)
+                .fontWeight(.medium)
+                .opacity(0.6)
             Button("Entre", action: { showingAlert = true })
             Spacer()
         }
     }
-
-    private var storePasswordSwitch: some View {
-        HStack {
-            Toggle(isOn: $storePassword, label: {
-                Text("Lembrar minha senha")
-                    .font(.callout)
-            })
-        }
-    }
     
     private var buttonsStack: some View {
-        VStack {
+        VStackLayout(spacing: SpacingConstants.medium.constant) {
             PrimaryButton(buttonTitle: "Criar conta",
                           buttonAction: { showingAlert = true })
-            .frame(height: ButtonSizeConstants.big.constant)
+            .frame(height: ButtonSizeConstants.large.constant)
             
             SignInWithAppleButton(
                 onRequest: { request in
@@ -80,7 +73,7 @@ struct SignUpView: View {
                 onCompletion: { result in
                     //
                 }
-            ).frame(height: ButtonSizeConstants.big.constant)
+            ).frame(height: ButtonSizeConstants.appleSignIn.constant)
             siginInTipView
         }
     }

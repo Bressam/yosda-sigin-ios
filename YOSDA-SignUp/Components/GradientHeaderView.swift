@@ -19,6 +19,7 @@ struct HeaderView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(height: 100)
+                .padding(.top, 50)
         }
     }
 }

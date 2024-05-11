@@ -9,8 +9,8 @@ import SwiftUI
 import AuthenticationServices
 
 struct SignUpView: View {
-    @State private var email: String = ""
-    @State private var password: String = ""
+    private var email: String = ""
+    private var password: String = ""
     @State private var showingAlert = false
     @State private var storePassword: Bool = true
     
@@ -19,7 +19,7 @@ struct SignUpView: View {
             HeaderView(colors: [
                 .init(red: 26 / 255, green: 4 / 255, blue: 58 / 255),
                 .init(red: 69 / 255, green: 23 / 255, blue: 181 / 255)
-            ]).frame(height: 360)
+            ]).frame(height: 350)
             ZStack {
                 BottomSheet(title: "Crie sua conta" ) {
                     VStack(alignment: .leading,

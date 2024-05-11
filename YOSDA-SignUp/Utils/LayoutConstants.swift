@@ -8,7 +8,7 @@
 import Foundation
 
 enum SpacingConstants {
-    case xsmall, small, medium, big, xbig
+    case xsmall, small, medium, big, xbig, xxbig
     
     var constant: CGFloat {
         switch self {
@@ -17,6 +17,7 @@ enum SpacingConstants {
         case .medium: return 16
         case .big: return 24
         case .xbig: return 32
+        case .xxbig: return 40
         }
     }
 }

@@ -18,8 +18,9 @@ struct BottomSheet<Content> : View where Content : View {
             VStack(alignment: .leading, spacing: SpacingConstants.big.constant) {
                 Text(title)
                     .font(.title)
-                    .fontWeight(.bold)
+                    .fontWeight(.medium)
                 content()
+                Spacer()
             }
             .padding(.top, SpacingConstants.xbig.constant)
             .padding([.leading, .trailing], SpacingConstants.medium.constant)

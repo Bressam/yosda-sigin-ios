@@ -13,6 +13,7 @@ struct PrimaryTextField: View {
     @State var buttonTitle: String? = nil
     @State var isSecured: Bool = false
     @State var hasSecurityToggle: Bool = false
+    @State var storePassword: Bool = true
     var buttonAction: (() -> Void)? = nil
     
     var body: some View {
@@ -55,6 +56,11 @@ struct PrimaryTextField: View {
                 RoundedRectangle(cornerRadius: RadiusConstants.small.constant)
                     .stroke(.highlight, lineWidth: 2.5)
             }
+
+            if isSecured {
+                storePasswordSwitch
+                    .padding(.top, SpacingConstants.xsmall.constant)
+            }
         }
     }
     
@@ -66,6 +72,15 @@ struct PrimaryTextField: View {
         } else {
             TextField("", text: $inputText)
                 .foregroundStyle(.gray)
+        }
+    }
+    
+    private var storePasswordSwitch: some View {
+        HStack {
+            Toggle(isOn: $storePassword, label: {
+                Text("Lembrar minha senha")
+                    .font(.caption)
+            })
         }
     }
 }

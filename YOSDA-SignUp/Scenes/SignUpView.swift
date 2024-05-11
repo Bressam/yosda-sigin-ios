@@ -30,10 +30,10 @@ struct SignUpView: View {
                                          inputText: password,
                                          buttonTitle: "Recuperar senha",
                                          isSecured: true,
-                                         hasSecurityToggle: true) {
+                                         hasSecurityToggle: true,
+                                         storePassword: storePassword) {
                             showingAlert = true
                         }
-                        storePasswordSwitch
                         buttonsStack
                         Spacer()
                     }
@@ -55,15 +55,6 @@ struct SignUpView: View {
                 .foregroundStyle(.gray)
             Button("Entre", action: { showingAlert = true })
             Spacer()
-        }
-    }
-
-    private var storePasswordSwitch: some View {
-        HStack {
-            Toggle(isOn: $storePassword, label: {
-                Text("Lembrar minha senha")
-                    .font(.callout)
-            })
         }
     }
     

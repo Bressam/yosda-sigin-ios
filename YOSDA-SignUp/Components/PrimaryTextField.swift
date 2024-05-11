@@ -7,14 +7,38 @@
 
 import SwiftUI
 
+enum TextFieldStyle {
+    case regular, password
+    
+    var hasSecurityToggle: Bool {
+        switch self {
+        case .regular: false
+        case .password: true
+        }
+    }
+    
+    var hasStorePasswordSwitch: Bool {
+        switch self {
+        case .regular: false
+        case .password: true
+        }
+    }
+    
+    var buttonTitle: String {
+        switch self {
+        case .regular: ""
+        case .password: "Recuperar senha"
+        }
+    }
+}
+
 struct PrimaryTextField: View {
     @State var fieldTitle: String
     @State var inputText: String
-    @State var buttonTitle: String? = nil
     @State var isSecured: Bool = false
-    @State var hasSecurityToggle: Bool = false
-    @State var storePassword: Bool = true
+    @State var style: TextFieldStyle = .regular
     var buttonAction: (() -> Void)? = nil
+    @State private var storePassword: Bool = true
     
     var body: some View {
         VStack(alignment: .leading,
@@ -24,11 +48,10 @@ struct PrimaryTextField: View {
                     .font(.callout)
                     .fontWeight(.bold)
                     .foregroundStyle(.gray)
-                if let buttonTitle,
-                   let buttonAction {
+                if let buttonAction {
                     Spacer()
                     Button(action: buttonAction, label: {
-                        Text(buttonTitle)
+                        Text(style.buttonTitle)
                     })
                 }
             }
@@ -38,7 +61,7 @@ struct PrimaryTextField: View {
                     .padding(.leading, SpacingConstants.small.constant)
                     .frame(height: 48)
                 Spacer()
-                if hasSecurityToggle {
+                if style.hasSecurityToggle {
                     Button(action: {
                         isSecured.toggle()
                     }, label: {
@@ -57,7 +80,7 @@ struct PrimaryTextField: View {
                     .stroke(.highlight, lineWidth: 2.5)
             }
 
-            if isSecured {
+            if style.hasStorePasswordSwitch {
                 storePasswordSwitch
                     .padding(.top, SpacingConstants.xsmall.constant)
             }
@@ -93,6 +116,6 @@ struct PrimaryTextField: View {
 #Preview(traits: .sizeThatFitsLayout) {
     PrimaryTextField(fieldTitle: "Field title", inputText: "",
                      isSecured: true,
-                     hasSecurityToggle: true)
+                     style: .password)
         .padding(24)
 }

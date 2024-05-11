@@ -92,8 +92,13 @@ struct PrimaryTextField: View {
         if isSecured {
             SecureField("", text: $inputText)
                 .foregroundStyle(.gray)
+                .font(.caption2)
+                .fontWeight(.ultraLight)
         } else {
             TextField("", text: $inputText)
+                .autocapitalization(.none)
+                .keyboardType(.emailAddress)
+                .font(.callout)
                 .foregroundStyle(.gray)
         }
     }

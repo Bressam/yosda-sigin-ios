@@ -20,7 +20,8 @@ struct PrimaryTextField: View {
                spacing: SpacingConstants.small.constant) {
             HStack {
                 Text(fieldTitle)
-                    .fontWeight(.semibold)
+                    .font(.callout)
+                    .fontWeight(.bold)
                     .foregroundStyle(.gray)
                 if let buttonTitle,
                    let buttonAction {

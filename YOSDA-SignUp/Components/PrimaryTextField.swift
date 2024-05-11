@@ -17,7 +17,7 @@ struct PrimaryTextField: View {
     
     var body: some View {
         VStack(alignment: .leading,
-               spacing: SpacingConstants.small.constant) {
+               spacing: SpacingConstants.xsmall.constant) {
             HStack {
                 Text(fieldTitle)
                     .font(.callout)
@@ -35,7 +35,7 @@ struct PrimaryTextField: View {
             HStack {
                 inputField
                     .padding(.leading, SpacingConstants.small.constant)
-                    .frame(height: 42)
+                    .frame(height: 48)
                 Spacer()
                 if hasSecurityToggle {
                     Button(action: {
@@ -43,10 +43,10 @@ struct PrimaryTextField: View {
                     }, label: {
                         if isSecured {
                             Image(systemName: "eye")
-                                .foregroundStyle(.gray)
+                                .foregroundStyle(.gray.opacity(0.8))
                         } else {
                             Image(systemName: "eye.slash")
-                                .foregroundStyle(.gray)
+                                .foregroundStyle(.gray.opacity(0.8))
                         }
                     }).padding(.trailing, SpacingConstants.small.constant)
                 }

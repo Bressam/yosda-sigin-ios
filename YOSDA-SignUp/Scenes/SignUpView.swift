@@ -23,7 +23,7 @@ struct SignUpView: View {
             ZStack {
                 BottomSheet(title: "Crie sua conta" ) {
                     VStack(alignment: .leading,
-                           spacing: SpacingConstants.medium.constant) {
+                           spacing: SpacingConstants.large.constant) {
                         PrimaryTextField(fieldTitle: "E-mail",
                                          inputText: email)
                         PrimaryTextField(fieldTitle: "Senha",

@@ -71,7 +71,7 @@ struct SignUpView: View {
         VStack {
             PrimaryButton(buttonTitle: "Criar conta",
                           buttonAction: { showingAlert = true })
-            .frame(height: ButtonSizeConstants.big.constant)
+            .frame(height: ButtonSizeConstants.large.constant)
             
             SignInWithAppleButton(
                 onRequest: { request in
@@ -80,7 +80,7 @@ struct SignUpView: View {
                 onCompletion: { result in
                     //
                 }
-            ).frame(height: ButtonSizeConstants.big.constant)
+            ).frame(height: ButtonSizeConstants.large.constant)
             siginInTipView
         }
     }

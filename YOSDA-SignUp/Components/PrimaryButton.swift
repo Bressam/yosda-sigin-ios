@@ -20,7 +20,7 @@ struct PrimaryButton: View {
                     .fontWeight(.semibold)
                     .foregroundStyle(.white)
             }
-        }.frame(height: ButtonSizeConstants.big.constant)
+        }.frame(height: ButtonSizeConstants.large.constant)
     }
 }
 

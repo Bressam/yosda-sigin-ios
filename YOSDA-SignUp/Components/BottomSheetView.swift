@@ -15,14 +15,14 @@ struct BottomSheet<Content> : View where Content : View {
         ZStack {
             RoundedRectangle(cornerRadius: 20)
                 .fill(.white)
-            VStack(alignment: .leading, spacing: SpacingConstants.big.constant) {
+            VStack(alignment: .leading, spacing: SpacingConstants.large.constant) {
                 Text(title)
                     .font(.title)
                     .fontWeight(.medium)
                 content()
                 Spacer()
             }
-            .padding(.top, SpacingConstants.xbig.constant)
+            .padding(.top, SpacingConstants.xlarge.constant)
             .padding([.leading, .trailing], SpacingConstants.medium.constant)
         }
     }

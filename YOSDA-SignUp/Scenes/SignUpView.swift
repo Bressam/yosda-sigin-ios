@@ -28,10 +28,8 @@ struct SignUpView: View {
                                          inputText: email)
                         PrimaryTextField(fieldTitle: "Senha",
                                          inputText: password,
-                                         buttonTitle: "Recuperar senha",
                                          isSecured: true,
-                                         hasSecurityToggle: true,
-                                         storePassword: storePassword) {
+                                         style: .password) {
                             showingAlert = true
                         }
                         buttonsStack

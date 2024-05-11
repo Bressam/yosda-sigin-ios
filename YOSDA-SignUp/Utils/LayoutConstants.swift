@@ -24,11 +24,12 @@ enum SpacingConstants {
 }
 
 enum ButtonSizeConstants {
-    case large
+    case large, appleSignIn
     
     var constant: CGFloat {
         switch self {
-        case .large: return 48
+        case .large: return 46
+        case .appleSignIn: return 48
         }
     }
 }

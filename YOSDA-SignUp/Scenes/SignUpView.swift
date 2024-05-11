@@ -53,13 +53,15 @@ struct SignUpView: View {
             Spacer()
             Text("Já possui uma conta?")
                 .foregroundStyle(.gray)
+                .fontWeight(.medium)
+                .opacity(0.6)
             Button("Entre", action: { showingAlert = true })
             Spacer()
         }
     }
     
     private var buttonsStack: some View {
-        VStack {
+        VStackLayout(spacing: SpacingConstants.medium.constant) {
             PrimaryButton(buttonTitle: "Criar conta",
                           buttonAction: { showingAlert = true })
             .frame(height: ButtonSizeConstants.large.constant)
@@ -71,7 +73,7 @@ struct SignUpView: View {
                 onCompletion: { result in
                     //
                 }
-            ).frame(height: ButtonSizeConstants.large.constant)
+            ).frame(height: ButtonSizeConstants.appleSignIn.constant)
             siginInTipView
         }
     }
